@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ra com os Bro</title>
+    <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="container">
+
+            <div class="title">
+                <h2>Divida suas contas corretamente!</h2>
+            </div><!--title-->
+
+            <div class="content-people">
+
+                <div class="people">
+                    <input class="color1" data-js="people" min="0"  placeholder="Pessoas" type="number">
+                    <p class="color1">Pessoas</p>
+                </div><!--people-->
+
+            </div><!--content-people-->
+
+
+            <div class="foods">
+
+               
+                <div class="content-food">
+                        
+                    <h3>CHURRASCO</h3>
+
+                    <div class="valor">
+                        <p>Valor:</p>
+                        <input data-js="foods" min="0" max="1000" placeholder="R$" type="number">
+                    </div>
+
+                </div><!--content-food-->
+
+
+                <div class="content-food">
+
+                    <h3>BEBIDAS</h3>
+
+                    <div class="valor">
+                        <p>Valor:</p>
+                        <input  data-js="drinks" min="0" max="1000" placeholder="R$" type="number">
+                    </div>
+    
+                </div><!--content-food-->
+
+
+                <div class="content-food">
+
+                    <h3>DOCES</h3>
+
+                    <div class="valor">
+                        <p>Valor:</p>
+                        <input data-js="sweets" min="0" max="1000" placeholder="R$" type="number">
+                    </div>
+        
+                </div><!--content-food-->
+                
+
+            </div><!--foods-->
+
+            <input data-js="calc" type="submit" value="Calcular">
+
+
+
+            <div data-js="result" class="result">
+                <span> VALOR TOTAL</span>
+            </div><!--result-->
+            
+    </div><!--container-->
+    
+
+    <script src="calcfood.js"></script>
+
+</body>
+</html>
