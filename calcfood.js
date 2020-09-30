@@ -19,6 +19,7 @@
       people.value === "" || people.value === "0"
       ? alert("Digite a quantidade de Pessoas!") 
       : finalSum();
+      result.style.display = 'block';
      }
   
     const finalSum = () =>{
