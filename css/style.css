@@ -3,7 +3,6 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: 'Rowdies', cursive;
 }
 
 html, body {
@@ -31,11 +30,17 @@ html, body {
 
 .title h2 {
   text-align: center;
-  font-size: 40px;
+  font-size: 60px;
   margin-bottom: 30px;
 }
 
 .content-people {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 90%;
   border-radius: 10px;
   background: #ebebeb;
@@ -45,20 +50,24 @@ html, body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 20px;
 }
 
 .content-people input {
   width: 100px;
-  margin-right: 20px;
   padding: 10px 3px;
 }
 
 .content-people .people p {
-  padding: 10px;
+  font-size: 20px;
+  padding: 10px 0;
 }
 
 .color1 {
