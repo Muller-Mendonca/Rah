@@ -63,11 +63,12 @@ html, body {
 .content-people input {
   width: 100px;
   padding: 10px 3px;
+  text-align: center;
+  border: 1px solid #dadada;
 }
 
-.content-people .people p {
-  font-size: 20px;
-  padding: 10px 0;
+.content-people .people h3 {
+  margin: 10px 0;
 }
 
 .color1 {
@@ -111,6 +112,7 @@ html, body {
   margin-right: 20px;
   padding: 10px;
   margin: 0 auto;
+  text-align: center;
   border: 1px solid #dadada;
 }
 
