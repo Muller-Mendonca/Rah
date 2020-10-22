@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rowdies', cursive;
+}
+
+html,body{
+    height: 100%;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.title h2{
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.content-people{
+    width: 90%;
+    border-radius: 10px;
+    background: rgb(235, 235, 235);
+}
+
+.content-people .people{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.content-people .people input{
+    width: 100px;
+    margin-right: 20px;
+    padding: 10px 3px;
+}
+
+.content-people .people p{
+    padding: 10px;
+}
+
+.color1{
+    color: rgb(0, 21, 116);
+}
+
+.color2{
+    color: rgb(250, 33, 69);
+}
+
+.container .foods{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    margin: 20px 0;
+    padding-bottom: 20px;
+    border-radius: 10px;
+    background: rgb(235, 235, 235);
+}
+
+
+.container .foods .content-food{
+    width: 500px;
+    max-width: 90%;
+    text-align: center;
+}
+
+.container .foods .content-food h3{
+    margin: 10px;
+}
+
+.container .foods .content-food input{
+    width: 100px;
+    margin-right: 20px;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+.container input[type=submit]{
+    width: 100px;
+    padding: 10px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.result{
+    width: 90%;
+    padding: 15px 0;
+    text-align: center;
+    border-radius: 10px;
+    /*background: rgb(68, 26, 255);*/
+    border: 2px solid rgb(0, 21, 116);
+}
+
+.result span{
+    font-size: 20px;
+}
+
+
+
+@media( max-width: 600px){
+
+    .title h2{
+        font-size: 30px;
+    }
+}
