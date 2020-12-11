@@ -10,30 +10,32 @@
      const sweets = document.querySelector('[data-js="sweets"]');
      const calc = document.querySelector('[data-js="calc"]');
      const result = document.querySelector('[data-js="result"]');
-  
+
+    const peopleValue = () =>{
+      if(people.value === "" || people.value === "0"){
+       alert("Digite a quantidade de Pessoas!") 
+      } else{
+       finalSum();
+      };
+    }
     
      calc.addEventListener('click', peopleValue);
   
-     function peopleValue(){
-  
-      people.value === "" || people.value === "0"
-      ? alert("Digite a quantidade de Pessoas!") 
-      : finalSum();
-      result.style.display = 'block';
-     }
+     
   
     const finalSum = () =>{
-  
+      result.style.display = 'block';
+      const contribuir = 'Cada pessoa deverá contribuir com R$'
       const allFood =  +foods.value + +drinks.value + +sweets.value;
       const pay = allFood / people.value;
-      allFood <= 0 ? alert('Por favor, não digite valores negativos!')
-      : result.innerText = `Cada pessoa deverá contribuir com R$ ${pay}`;
+      allFood <= 0 || allFood === '' ? alert('Por favor,  digite algum valor!')
+      : result.innerText = contribuir + pay;
       clearValue();  
     };
   
     const clearValue = () =>{
   
-      var allValues = [people,foods,drinks,sweets];
+      const allValues = [people,foods,drinks,sweets];
       allValues.forEach( item =>{ item.value = ''; });
     };
   
