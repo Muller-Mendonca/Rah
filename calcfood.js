@@ -20,21 +20,22 @@
     }
     
      calc.addEventListener('click', peopleValue);
-  
      
-  
+
     const finalSum = () =>{
       result.style.display = 'block';
       const contribuir = 'Cada pessoa deverá contribuir com R$'
       const allFood =  +foods.value + +drinks.value + +sweets.value;
       const pay = allFood / people.value;
-      allFood <= 0 || allFood === '' ? alert('Por favor,  digite algum valor!')
-      : result.innerText = contribuir + pay;
-      clearValue();  
+      if(allFood <= 0 || allFood === ''){
+        alert('Por favor,  digite algum valor!')
+      } else{
+        result.innerText = contribuir + pay;
+        clearValue();  
+      }
     };
   
     const clearValue = () =>{
-  
       const allValues = [people,foods,drinks,sweets];
       allValues.forEach( item =>{ item.value = ''; });
     };
