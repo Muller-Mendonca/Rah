@@ -122,7 +122,13 @@ html, body {
   width: 100px;
   padding: 10px;
   margin-bottom: 20px;
+  border-radius: 5px;
+  border: none;
   cursor: pointer;
+}
+
+.container input[type=submit]:hover {
+  background: #777;
 }
 
 .result {

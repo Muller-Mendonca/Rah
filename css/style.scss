@@ -88,8 +88,14 @@ html,body{
     width: 100px;
     padding: 10px;
     margin-bottom: 20px;
+    border-radius: 5px;
+    border: none;
     cursor: pointer;
+    &:hover{
+        background: #777;
+    }
 }
+
 
 .result{
     width: 90%;
