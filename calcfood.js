@@ -35,8 +35,10 @@
     };
   
     const clearValue = () =>{
-      const allValues = [people,foods,drinks,sweets];
-      allValues.forEach( item =>{ item.value = ''; });
+      people.value = '';
+      foods.value = '';
+      drinks.value = '';
+      sweets.value = '';
     };
   
   };
