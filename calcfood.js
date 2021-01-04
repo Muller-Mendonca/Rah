@@ -12,7 +12,7 @@
      const result = document.querySelector('[data-js="result"]');
 
     const peopleValue = () =>{
-      if(people.value === "" || people.value === "0"){
+      if(people.value === "" || people.value === "0" || people.value < 0){
        alert("Digite a quantidade de Pessoas!") 
       } else{
        finalSum();
