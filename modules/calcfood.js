@@ -1,8 +1,6 @@
-(function () {
-    'use strict';
-    
+
   
-    function initCalc(){
+    export default function initCalc(){
   
      const people = document.querySelector('[data-js="people"]');
      const foods = document.querySelector('[data-js="foods"]');
@@ -42,7 +40,5 @@
     };
   
   };
-  initCalc();
   
   
-  })();
